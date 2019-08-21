@@ -28,11 +28,11 @@ app.post("/send-email", function(req, res) {
   
   
   const msg = {
-    to: 'saronnhong@gmail.com',
-    from: 'test@example.com',
-    subject: 'Sending with SendGrid is Fun',
+    to: req.body.email.sender,
+    from: req.body.email.recipient,
+    subject: req.body.email.subject,
     text: 'and easy to do anywhere, even with Node.js',
-    html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+    html: "FROM: " + req.body.email.from + "\n\n" + req.body.email.text,
   };
   sgMail.send(msg)
   .then((msg) => console.log('sendGrid email sent!'));
