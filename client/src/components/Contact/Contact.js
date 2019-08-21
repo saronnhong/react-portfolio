@@ -10,7 +10,8 @@ class Contact extends Component {
             sender: 'chich20x6@gmail.com',
             from: '',
             subject: '',
-            text: ''
+            text: '',
+            confirmMsg: 'confirm message'
         }
     }
     sendEmail = () => {  
@@ -20,7 +21,15 @@ class Contact extends Component {
               email: this.state.email
             }),
             headers: {"Content-Type": "application/json"}
-          })   
+          })
+          .then(res => {
+              if(res){
+                const { email } = this.state;
+                this.setState({ email: { ...email, confirmMsg: "Email sent.", from: "", subject: "", text: "" } })
+              }else{
+                  alert("email was not sent!");
+              }
+          })  
     }
 
     render() {
@@ -50,12 +59,12 @@ class Contact extends Component {
                     <input value={email.from}
                         onChange={e => this.setState({ email: { ...email, from: e.target.value } })} />
                     <div style={spacer} />
-                    <label> Subject </label>
+                    <label> Subject: </label>
                     <br />
                     <input value={email.subject}
                         onChange={e => this.setState({ email: { ...email, subject: e.target.value } })} />
                     <div style={spacer} />
-                    <label> Message </label>
+                    <label> Message: </label>
                     <br />
                     <textarea rows={3} value={email.text} style={textArea}
                         onChange={e => this.setState({ email: { ...email, text: e.target.value } })} />
@@ -63,6 +72,7 @@ class Contact extends Component {
                     <button onClick={() => {
                         this.sendEmail();
                     }}> Send Email </button>
+                    <p id="confirmMessage">{email.confirmMsg}</p>
                 </div>
             </div>
 

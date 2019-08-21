@@ -27,11 +27,10 @@ app.post("/send-email", function(req, res) {
     to: req.body.email.sender,
     from: req.body.email.recipient,
     subject: req.body.email.subject,
-    text: '',
     html: "FROM: " + req.body.email.from + "\n" + req.body.email.text,
   };
   sgMail.send(msg)
-  .then((msg) => console.log('sendGrid email sent!'));
+  .then((msg) => res.send("Email has been sent."));
 })
 
 // Send every other request to the React app
