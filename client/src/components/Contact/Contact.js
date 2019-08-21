@@ -11,7 +11,7 @@ class Contact extends Component {
             from: '',
             subject: '',
             text: '',
-            confirmMsg: 'confirm message'
+            confirmMsg: ''
         }
     }
     sendEmail = () => {  
