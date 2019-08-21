@@ -60,16 +60,19 @@ class App extends Component {
               <div className="row" id="contact">
                 <div className="col-md-6">
                   <div className="contactMeTitle">Contact Me </div>
-                </div>
-              </div>
-              <div className="row">
-                <div className="contactMeInfo">
+                  <div className="contactMeInfo">
                   <h6>Email: saronnhong@gmail.com</h6>
                   <h6>Phone: (209) 598-4517</h6>
-                  <a className="contactLinks" href="www.linkedin.com/in/saronnhong"><h6>LinkedIn</h6></a>
+                  <a className="contactLinks" href="https://www.linkedin.com/in/saronnhong"><h6>LinkedIn</h6></a>
                   <a className="contactLinks" href="https://github.com/saronnhong"><h6>Github</h6></a>
+                  
+                </div>
                 </div>
                 <Contact />
+              </div>
+              <div className="row">
+                
+                
               </div>
             </div>
 

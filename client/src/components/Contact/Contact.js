@@ -6,17 +6,22 @@ class Contact extends Component {
     state = {
         email: {
             recipient: 'Micaiah20x6@gmail.com',
-            sender: 'saronnhong@gmail.com',
+            sender: 'chich20x6@gmail.com',
             subject: '',
             text: ''
         }
     }
-    // sendEmail = (event) => {
-    //     event.preventDefault();
-    //     $.get('/send-email', () => {
-    //         console.log("email was sent from sendEmail!")
-    //     })
-    // }
+    sendEmail = () => {
+        
+        fetch("/send-email",{
+            method: 'POST',
+            body: JSON.stringify({
+              email: this.state.email
+            }),
+            headers: {"Content-Type": "application/json"}
+          })
+        
+    }
     render() {
         const { email } = this.state;
         const spacer = {
@@ -28,17 +33,17 @@ class Contact extends Component {
         return (
             <div className="contactForm">
                 <div style={{ marginTop: 10 }} >
-                    <h2> Send Email </h2>
-                    <label> Recipient </label>
+                    <h2 className= "contactMeTitle"> Send Email </h2>
+                    {/* <label> Recipient </label>
                     <br />
                     <input value={email.recipient}
                         onChange={e => this.setState({ email: { ...email, recipient: e.target.value } })} />
-                    <div style={spacer} />
-                    <label> Sender </label>
+                    <div style={spacer} /> */}
+                    {/* <label> Sender </label>
                     <br />
                     <input value={email.sender}
                         onChange={e => this.setState({ email: { ...email, sender: e.target.value } })} />
-                    <div style={spacer} />
+                    <div style={spacer} /> */}
                     <label> Subject </label>
                     <br />
                     <input value={email.subject}
@@ -50,7 +55,7 @@ class Contact extends Component {
                         onChange={e => this.setState({ email: { ...email, text: e.target.value } })} />
                     <div style={spacer} />
                     <button onClick={() => {
-                        alert('hello');
+                        this.sendEmail();
                     }}> Send Email </button>
                 </div>
             </div>

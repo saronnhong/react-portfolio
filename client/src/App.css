@@ -102,12 +102,17 @@
   opacity: .8;
 }
 
-.aboutMeInfo, .contactMeInfo {
+.aboutMeInfo{
   font-size: 18px;
-  margin-bottom: 40%;
+  margin-bottom: 50%;
   opacity: .8;
 }
 
+.contactMeInfo {
+  font-size: 18px;
+  margin-bottom: 85%;
+  opacity: .8;
+}
 .contactMeTitle{
   font-size: 36px;
   font-weight: bolder;
