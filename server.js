@@ -1,10 +1,11 @@
 // require('dotenv').config();
+if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 const express = require("express");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-const nodemailer = require('nodemailer');
+// const nodemailer = require('nodemailer');
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -14,33 +15,33 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-if (process.env.NODE_ENV !== 'production') require('dotenv').config()
+
 
 // Define API routes here
-let transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-      user: process.env.EMAIL,
-      pass: process.env.PASSWORD
-  }
-});
+// let transporter = nodemailer.createTransport({
+//   service: 'gmail',
+//   auth: {
+//       user: process.env.EMAIL,
+//       pass: process.env.PASSWORD
+//   }
+// });
 
-app.post("/send-email", function(req, res) {
-  let mailOptions = {
-    from: req.body.email.recipient,
-    to: req.body.email.sender,
-    subject: req.body.email.subject,
-    text: "FROM: " + req.body.email.from + "\n\n" + req.body.email.text
-  };
+// app.post("/send-email", function(req, res) {
+//   let mailOptions = {
+//     from: req.body.email.recipient,
+//     to: req.body.email.sender,
+//     subject: req.body.email.subject,
+//     text: "FROM: " + req.body.email.from + "\n\n" + req.body.email.text
+//   };
 
-  transporter.sendMail(mailOptions, function (err, data) {
-      if (err) {
-          console.log("error occurs ", err);
-      } else {
-          console.log("email sent!");
-      }
-  });
-})
+//   transporter.sendMail(mailOptions, function (err, data) {
+//       if (err) {
+//           console.log("error occurs ", err);
+//       } else {
+//           console.log("email sent!");
+//       }
+//   });
+// })
 
 // Send every other request to the React app
 // Define any API routes before this runs
