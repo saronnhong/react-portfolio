@@ -5,6 +5,12 @@ const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
+const cors = require('cors'); //needed to disable sendgrid security
+
+
+app.use(cors()); //utilize Cors so the browser doesn't restrict data, without it Sendgrid will not send!
+
+
 // const nodemailer = require('nodemailer');
 
 // Define middleware here
@@ -15,7 +21,22 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
+const sgMail = require('@sendgrid/mail');
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
+app.post("/send-email", function(req, res) {
+  
+  
+  const msg = {
+    to: 'saronnhong@gmail.com',
+    from: 'test@example.com',
+    subject: 'Sending with SendGrid is Fun',
+    text: 'and easy to do anywhere, even with Node.js',
+    html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+  };
+  sgMail.send(msg)
+  .then((msg) => console.log('sendGrid email sent!'));
+})
 
 // Define API routes here
 // let transporter = nodemailer.createTransport({
