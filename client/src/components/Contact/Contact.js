@@ -8,21 +8,21 @@ class Contact extends Component {
         email: {
             recipient: 'sn.reactport@gmail.com',
             sender: 'chich20x6@gmail.com',
+            from: '',
             subject: '',
             text: ''
         }
     }
-    sendEmail = () => {
-        
+    sendEmail = () => {  
         fetch("/send-email",{
             method: 'POST',
             body: JSON.stringify({
               email: this.state.email
             }),
             headers: {"Content-Type": "application/json"}
-          })
-        
+          })   
     }
+
     render() {
         const { email } = this.state;
         const spacer = {
@@ -45,6 +45,11 @@ class Contact extends Component {
                     <input value={email.sender}
                         onChange={e => this.setState({ email: { ...email, sender: e.target.value } })} />
                     <div style={spacer} /> */}
+                    <label> From: </label>
+                    <br />
+                    <input value={email.from}
+                        onChange={e => this.setState({ email: { ...email, from: e.target.value } })} />
+                    <div style={spacer} />
                     <label> Subject </label>
                     <br />
                     <input value={email.subject}

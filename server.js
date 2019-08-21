@@ -24,14 +24,11 @@ let transporter = nodemailer.createTransport({
 });
 
 app.post("/send-email", function(req, res) {
-  
-  console.log(req.body);
-
   let mailOptions = {
     from: req.body.email.recipient,
     to: req.body.email.sender,
     subject: req.body.email.subject,
-    text: req.body.email.text
+    text: "FROM: " + req.body.email.from + "\n\n" + req.body.email.text
   };
 
   transporter.sendMail(mailOptions, function (err, data) {
