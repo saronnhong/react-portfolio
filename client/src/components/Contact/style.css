@@ -152,4 +152,10 @@
     .contact{
       border-radius: 0 0 10px 10px;
     }
+    .container{
+      padding: 5px 0;
+    }
+    .containerForm{
+      margin-bottom: 0;
+    }
   }
