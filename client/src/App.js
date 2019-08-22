@@ -19,14 +19,14 @@ class App extends Component {
             </div>
             <div className="row">
               <div className="col-md-12">
-                <div className="nameText" >
+                <div className="nameText animated zoomInDown slower" >
                   Full Stack Web Developer
                 </div>
               </div>
             </div>
             <div className="row">
               <div className="col-md-12">
-                <div className="introText">
+                <div className="introText animated fadeInUp slow">
                   HTML | CSS | JavaScript | NodeJS | Express | MySQL | MongoDB | ReactJS
                 </div>
               </div>

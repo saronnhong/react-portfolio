@@ -65,7 +65,7 @@ class Contact extends Component {
                     <p id="confirmMessage">{email.confirmMsg}</p>
                 </div> */}
                 <div className="containerForm">
-                    <div className="wrapper animated bounceInLeft">
+                    <div className="wrapper animated bounceInLeft slower">
                         <div className="company-info">
                             <h3>Contact</h3>
                             <ul className="ulForm">
