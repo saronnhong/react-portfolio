@@ -23,12 +23,13 @@
   } */
   
   .containerForm{
-    max-width:1170px;
+    /* max-width:1170px; */
     margin-left:auto;
     margin-right:auto;
     padding:1em;
     margin-bottom: 10em;
-    opacity: .9;
+    opacity: .85;
+    
     
     
     
@@ -37,11 +38,13 @@
   .ulForm{
     list-style: none;
     padding:0;
+    
+    
   }
+
   
   .wrapper{
     /* box-shadow: 0 0 20px 0 rgb(123,193,214); */
-    
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
@@ -52,7 +55,7 @@
   }
   
   .company-info{
-    background:rgb(123,193,214);
+    background:rgb(240,229,168);
     border-radius: 10px 0 0 10px;
   }
   
@@ -93,7 +96,7 @@
   }
   
   .contact form button{
-    background:rgb(123,193,214);
+    background:rgb(240,229,168);
     border:0;
     text-transform: uppercase;
   }
@@ -112,6 +115,11 @@
     width: 6em;
     text-align: center;
   }
+  .contactLinks:visited, .contactLinks:link {
+    color: rgb(50,50,50);
+    opacity: .8;
+    
+  }
   
   /* LARGE SCREENS */
   /* @media(min-width:700px){
@@ -129,4 +137,16 @@
     .company-info h3, .company-info ul, .brandForm{
       text-align: left;
     }
+
   } */
+  @media(max-width:765px){
+    .wrapper{
+      display: block;
+    }
+    .company-info{
+      border-radius: 10px 10px 0 0;
+    }
+    .contact{
+      border-radius: 0 0 10px 10px;
+    }
+  }
