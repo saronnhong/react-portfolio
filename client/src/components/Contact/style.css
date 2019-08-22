@@ -1,26 +1,6 @@
-/* .contactMeTitle{
-    font-size: 36px;
-    font-weight: bolder;
-    color: rgb(240,229,168);
-    margin-left: -17px;
-    opacity: .8;
-    
-  }
-  #confirmMessage{
-    color: rgb(240,229,168);
-  } */
-
   *{
     box-sizing: border-box;
   }
-  
-  /* .contactForm{
-    background:#92bde7;
-    color:#485e74;
-    line-height:1.6;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding:1em;
-  } */
   
   .containerForm{
     /* max-width:1170px; */
@@ -31,24 +11,23 @@
     opacity: .93;
     width: 75%;
     margin-top: 8em;
-    
-    
-    
-    
+
+
   }
   
   .ulForm{
     list-style: none;
     padding:0;
     
-    
   }
-
-  
   .wrapper{
     /* box-shadow: 0 0 20px 0 rgb(123,193,214); */
     display: grid;
     grid-template-columns: 1fr 2fr;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(190, 186, 186);
+    box-shadow: 3px 3px 0px rgb(50,50,50);
   }
   
   .wrapper > *{
@@ -97,19 +76,6 @@
     padding:.3em;
     border:1px solid rgb(103,169,188);
   }
-  
-  /* .contact form button{
-    background:rgb(240,229,168);
-    border:0;
-    text-transform: uppercase;
-  } */
-  
-  /* .contact form button:hover,.contact form button:focus{
-    background:#92bde7;
-    color:#fff;
-    outline:0;
-    transition: background-color 2s ease-out;
-  } */
 
   #confirmMessage{
     background-color: #E38D58;
@@ -124,24 +90,6 @@
     
   }
   
-  /* LARGE SCREENS */
-  /* @media(min-width:700px){
-    .wrapper{
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      
-    }
-  
-    .wrapper > *{
-      padding:1.75em;
-      
-    }
-  
-    .company-info h3, .company-info ul, .brandForm{
-      text-align: left;
-    }
-
-  } */
   @media(max-width:765px){
     .wrapper{
       display: block;

@@ -42,28 +42,6 @@ class Contact extends Component {
         }
         return (
             <div className="contactForm" >
-                {/* <div style={{ marginTop: 10 }} >
-                    <h2 className= "contactMeTitle"> Send Email </h2>
-                    <label> From: </label>
-                    <br />
-                    <input value={email.from}
-                        onChange={e => this.setState({ email: { ...email, from: e.target.value } })} />
-                    <div style={spacer} />
-                    <label> Subject: </label>
-                    <br />
-                    <input value={email.subject}
-                        onChange={e => this.setState({ email: { ...email, subject: e.target.value } })} />
-                    <div style={spacer} />
-                    <label> Message: </label>
-                    <br />
-                    <textarea rows={3} value={email.text} style={textArea}
-                        onChange={e => this.setState({ email: { ...email, text: e.target.value } })} />
-                    <div style={spacer} />
-                    <button onClick={() => {
-                        this.sendEmail();
-                    }}> Send Email </button>
-                    <p id="confirmMessage">{email.confirmMsg}</p>
-                </div> */}
                 <div className="containerForm">
                     <div className="wrapper animated bounceInLeft slower">
                         <div className="company-info">
@@ -80,20 +58,13 @@ class Contact extends Component {
                             <p id="confirmMessage">{email.confirmMsg}</p>
                             <form>
                                 <p>
-                                    {/* <label>Name</label> */}
                                     <input placeholder="Name" value={email.subject}
                                         onChange={e => this.setState({ email: { ...email, subject: e.target.value } })} />
                                 </p>
                                 <p>
-                                    {/* <label>Email Address</label> */}
                                     <input placeholder="Email Address" value={email.from}
                                         onChange={e => this.setState({ email: { ...email, from: e.target.value } })} />
                                 </p>
-                                {/* <p className="full">
-                                    <label>Message</label>
-                                    <textarea rows="5" value={email.text}
-                                        onChange={e => this.setState({ email: { ...email, text: e.target.value } })} />
-                                </p> */}
                                 <div class="input-group full">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">Message</span>

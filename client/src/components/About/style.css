@@ -17,17 +17,17 @@
     border-style: solid;
     /* border-radius: 10px; */
     border-color: rgb(190, 186, 186);
-    /* box-shadow: 3px 3px 0px rgb(50,50,50); */
+    box-shadow: 3px 3px 0px rgb(50,50,50);
   }
 
   .aboutMeTitle{
-    font-size: 30px;
-    margin-left: 10px;
+    /* font-size: 30px; */
+    margin-left: .5em;
 
   }
   .aboutMeInfo {
     font-size: 16px;
-    margin: 0 10px;
+    margin: 10px;
     color: black;
     /* margin-bottom: 0%; */
   }
