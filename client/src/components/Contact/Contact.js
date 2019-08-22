@@ -65,7 +65,7 @@ class Contact extends Component {
                     <p id="confirmMessage">{email.confirmMsg}</p>
                 </div> */}
                 <div className="containerForm">
-                    <div  className="wrapper animated bounceInLeft">
+                    <div className="wrapper animated bounceInLeft">
                         <div className="company-info">
                             <h3>Contact</h3>
                             <ul className="ulForm">
@@ -80,22 +80,28 @@ class Contact extends Component {
                             <p id="confirmMessage">{email.confirmMsg}</p>
                             <form>
                                 <p>
-                                    <label>Name</label>
-                                    <input value={email.subject}
+                                    {/* <label>Name</label> */}
+                                    <input placeholder="Name" value={email.subject}
                                         onChange={e => this.setState({ email: { ...email, subject: e.target.value } })} />
                                 </p>
                                 <p>
-                                    <label>Email Address</label>
-                                    <input value={email.from}
+                                    {/* <label>Email Address</label> */}
+                                    <input placeholder="Email Address" value={email.from}
                                         onChange={e => this.setState({ email: { ...email, from: e.target.value } })} />
                                 </p>
-                                <p className="full">
+                                {/* <p className="full">
                                     <label>Message</label>
                                     <textarea rows="5" value={email.text}
                                         onChange={e => this.setState({ email: { ...email, text: e.target.value } })} />
-                                </p>
-
-                                <button onClick={() => {
+                                </p> */}
+                                <div class="input-group full">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Message</span>
+                                    </div>
+                                    <textarea class="form-control" rows="7" aria-label="With textarea" value={email.text}
+                                        onChange={e => this.setState({ email: { ...email, text: e.target.value } })}></textarea>
+                                </div>
+                                <button className="btn btn-primary" type="button" onClick={() => {
                                     this.sendEmail();
                                 }}> Submit</button>
 
