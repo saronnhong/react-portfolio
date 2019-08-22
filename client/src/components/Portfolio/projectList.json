@@ -2,7 +2,7 @@
   {
     "id": 1,
     "project1": "DANI: A Lesson In MERN",
-    "deployLink1": "http://app-dani.herokuapp.com/",
+    "deployLink1": "https://dani-ap.herokuapp.com",
     "imageLocation1": "/img/dani_ss.png",
     "githubLink1": "https://github.com/saronnhong/dani",
     "project2": "Clicky Game: A Lesson in ReactJS",
@@ -17,9 +17,9 @@
     "imageLocation1": "/img/monogoscraper.png",
     "githubLink1": "https://github.com/saronnhong/mongo-scraper",
     "project2": "Project 2: Wat2Watch",
-    "deployLink2": "https://movie-generator.herokuapp.com/",
+    "deployLink2": "https://wat2watch-p2.herokuapp.com/",
     "imageLocation2": "/img/wat2watch.png",
-    "githubLink2": "https://github.com/vinirg22/movie_gen"
+    "githubLink2": "https://github.com/saronnhong/movie_gen"
   },
   {
     "id": 3,

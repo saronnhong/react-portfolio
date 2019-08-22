@@ -56,9 +56,9 @@ class App extends Component {
               </div>
             </div>
 
-            <div className="container">
-              <div className="row" id="contact">
-                <div className="col-md-6">
+            <div className="container" >
+              <div className="row" id="contact" >
+                {/* <div className="col-md-6">
                   <div className="contactMeTitle">Contact Me </div>
                   <div className="contactMeInfo">
                   <h6>Email: saronnhong@gmail.com</h6>
@@ -67,12 +67,13 @@ class App extends Component {
                   <a className="contactLinks" href="https://github.com/saronnhong"><h6>Github</h6></a>
                   
                 </div>
-                </div>
-                <Contact />
+                </div> */}
+                
+
               </div>
-              <div className="row">
+              <div className="row" >
                 
-                
+                <Contact />
               </div>
             </div>
 
