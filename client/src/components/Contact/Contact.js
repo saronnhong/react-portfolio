@@ -71,8 +71,8 @@ class Contact extends Component {
                             <ul className="ulForm">
                                 <li><i className="fa fa-phone"></i> (209) 598-4517</li>
                                 <li><i className="fa fa-envelope"></i> saronnhong@gmail.com</li>
-                                <li><a className="contactLinks" href="https://www.linkedin.com/in/saronnhong"><div><i class="fab fa-linkedin"></i> LinkedIn</div></a></li>
-                                <li><a className="contactLinks" href="https://github.com/saronnhong"><div><i class="fab fa-github"></i> Github</div></a></li>
+                                <li><a className="contactLinks" href="https://www.linkedin.com/in/saronnhong"><div><i class="fab fa-linkedin"></i> linkedin.com/in/saronnhong</div></a></li>
+                                <li><a className="contactLinks" href="https://github.com/saronnhong"><div><i class="fab fa-github"></i> github.com/saronnhong</div></a></li>
                             </ul>
                         </div>
                         <div className="contact">
