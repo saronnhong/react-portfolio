@@ -41,12 +41,7 @@
   color: rgb(20,20,20);
 }
 
-.aboutSection {
-  height: auto;
-  background: rgb(20,11,10);
-  /* color: white; */
-  
-}
+
 
 
 
@@ -94,20 +89,7 @@
   margin: 20px auto;
 }
 
-.aboutMeTitle{
-  font-size: 36px;
-  font-weight: bolder;
-  color: rgb(240,229,168);
-  margin: 17% 0 3% 0;
-  opacity: .8;
-}
 
-.aboutMeInfo{
-  font-size: 18px;
-  margin-bottom: 50%;
-  opacity: .8;
-  color: white;
-}
 
 .contactMeInfo {
   font-size: 18px;
@@ -148,9 +130,9 @@ a:hover {
     /* color: rgb(50,50,50); */
   }
 
-  .emptyRow {
+  /* .emptyRow {
     height: 250px;
-  }
+  } */
 
   .homeScreen {
     /* background-image: url("/img/full-bloom.png"); */
@@ -159,16 +141,7 @@ a:hover {
     /* background-blend-mode: multiply; */
   }
 
-  .aboutMeTitle{
-    font-size: 30px;
-    margin-left: 10px;
-
-  }
-  .aboutMeInfo {
-    font-size: 16px;
-    margin: 0 10px;
-    /* margin-bottom: 0%; */
-  }
+  
   .contactMeTitle{
     font-size: 30px;
 

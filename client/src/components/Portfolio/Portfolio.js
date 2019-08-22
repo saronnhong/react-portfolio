@@ -12,7 +12,7 @@ class Portfolio extends Component  {
       }
     render(){
     return (
-        <div className="portMain">
+        <div className="portMain animated bounceInRight slower">
             <div className="container portContainer">
                 <div className="row">
                     <div className="col-md-12">

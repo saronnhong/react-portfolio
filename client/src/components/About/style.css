@@ -1,0 +1,44 @@
+  *{
+    box-sizing: border-box;
+  }
+ 
+  .aboutMain{
+    /* max-width:1170px; */
+    margin-left:auto;
+    margin-right:auto;
+    padding:4em;
+    /* margin-bottom: 15em; */
+    opacity: .93;
+    width: 75%;
+    margin-top: 6em;
+    background-color: white;
+    border-radius: 10px;
+    
+    border-style: solid;
+    /* border-radius: 10px; */
+    border-color: rgb(190, 186, 186);
+    /* box-shadow: 3px 3px 0px rgb(50,50,50); */
+  }
+
+  .aboutMeTitle{
+    font-size: 30px;
+    margin-left: 10px;
+
+  }
+  .aboutMeInfo {
+    font-size: 16px;
+    margin: 0 10px;
+    color: black;
+    /* margin-bottom: 0%; */
+  }
+  
+  .aboutSection {
+    height: auto;
+    background: rgb(20,11,10);
+    /* color: white; */
+    
+  }
+  .imgHolder{
+    width: 70%;
+    float: right;
+  }

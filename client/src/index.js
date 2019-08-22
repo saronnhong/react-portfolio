@@ -7,6 +7,8 @@ import registerServiceWorker from "./registerServiceWorker";
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import About from './components/About';
 
 ReactDOM.render(
     <Router>
@@ -14,8 +16,9 @@ ReactDOM.render(
             <Navbar />
             <Switch>
                 <Route exact path="/" component={App} />
-                <Route exact path="/react-portfolio" component={App} />
+                <Route exact path="/about" component={About} />
                 <Route exact path="/portfolio" component={Portfolio} />
+                <Route exact path="/contact" component={Contact} />
                 <Route component={App} />
             </Switch>
 

@@ -27,8 +27,10 @@
     margin-left:auto;
     margin-right:auto;
     padding:1em;
-    margin-bottom: 15em;
+    /* margin-bottom: 15em; */
     opacity: .93;
+    width: 75%;
+    margin-top: 8em;
     
     
     
