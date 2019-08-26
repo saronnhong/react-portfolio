@@ -27,9 +27,10 @@
     border-style: solid;
     border-radius: 10px;
     border-color: rgb(190, 186, 186);
-    box-shadow: 3px 3px 0px rgb(50,50,50);
+    /* box-shadow: 3px 3px 0px rgb(50,50,50); */
     margin-top: 80px;
     /* margin-bottom: 40px; */
+    box-shadow: 0 0 20px 0 rgba(72,94,116,.7);
     
     
 }
