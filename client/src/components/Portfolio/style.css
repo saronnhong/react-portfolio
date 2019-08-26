@@ -4,10 +4,10 @@
     
 }
 
-.cardPort {
+/* .cardPort {
     margin: 20px 10px 5px 10px;
     
-}
+} */
 .githubFA {
     float: right;
 }
@@ -21,6 +21,7 @@
 }
 
 .portContainer{
+    
     background-color: rgb(250, 250, 250);
     opacity: 0.95;
     width: 85%;
@@ -50,6 +51,56 @@ body{
     transition: all 1.3s;
     width: 100%;
 } */
+
+.cardPort{
+    /* position: absolute;
+    top: 10em;
+    left: 50%; */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: 0.5s;
+}
+.cardFront{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.5s;
+}
+.cardPort:hover .cardFront{
+    transform: rotateX(-180deg);
+}
+
+.cardPort:hover .cardBack{
+    transform: rotateX(0deg);
+}
+.cardBack{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 0.5s;
+    opacity: .9;
+}
+.cardDetails {
+    color: white;
+    margin: 20px;
+}
 
 @media only screen and (max-width: 700px) {
     .portContainer{
