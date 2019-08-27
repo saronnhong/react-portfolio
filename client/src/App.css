@@ -34,6 +34,9 @@
   background-size: cover;
   
 }
+body .homeScreen{
+  overflow: hidden;
+}
 .imgRow {
   display: flex;
   justify-content: center;
