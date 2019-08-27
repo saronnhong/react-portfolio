@@ -44,13 +44,7 @@ body{
   
 }
 
-/* .back-drop {
-    background-color: rgba(48, 49, 48, 0.42);
-    height: 100%;
-    position: fixed;
-    transition: all 1.3s;
-    width: 100%;
-} */
+
 
 .cardPort{
     /* position: absolute;
@@ -65,8 +59,7 @@ body{
     transform-style: preserve-3d;
     perspective: 600px;
     transition: .5s;
-    /* -webkit-transform: -webkit-translate(-50%, -50%); */
-    /* -webkit-transform-style: preserve-3d; */
+
 }
 .cardFront{
     position: relative;
@@ -78,18 +71,15 @@ body{
     /* backface-visibility: hidden; */
     transform: rotateY(0deg);
     transition: .5s;
-    /* -webkit-transform: -webkit-rotateY(0deg);
-    -webkit-transition: .5s; */
+   
 }
 .cardPort:hover .cardFront{
     transform: rotateY(-180deg);
-    /* -webkit-transform: rotateY(-180deg); */
     
 }
 
 .cardPort:hover .cardBack{
     transform: rotateY(0deg);
-    /* -webkit-transform: rotateY(0deg); */
 
 
 }
@@ -105,20 +95,25 @@ body{
     transition: .5s;
     opacity: .95;
     overflow-y: auto;
-    /* -webkit-transition: .5s;
-    -webkit-transform: rotateY(180deg); */
     
 }
 .cardDetails {
     color: white;
     margin: 20px;
-    font-size: 12px;
+    font-size: 14px;
     
 }
-.desciptTitle{
+.descriptTitle{
     font-weight: bold;
     color: red;
+    padding-right: .5em;
 }
+
+.cardBackLink{
+    display: flex;
+    
+}
+
 
 @media only screen and (max-width: 700px) {
     .portContainer{

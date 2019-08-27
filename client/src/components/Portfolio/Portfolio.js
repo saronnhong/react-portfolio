@@ -5,12 +5,12 @@ import Project from "./projectList.json";
 import "./style.css";
 
 class Portfolio extends Component {
-    state = {
-        isClicked: false
-    }
-    componentDidMount() {
-        window.scrollTo(0, 0);
-    }
+    // state = {
+    //     isClicked: false
+    // }
+    // componentDidMount() {
+    //     window.scrollTo(0, 0);
+    // }
 
     render() {
         return (
@@ -27,7 +27,7 @@ class Portfolio extends Component {
                             <div className="col-md-6 cardRow">
                                 <div className="cardPort">
                                     <div className="card cardFront">
-                                        <a>
+                                        <a >
                                             <img src={process.env.PUBLIC_URL + projects.imageLocation1} className="card-img-top" alt="..." />
                                         </a>
                                         <div className="card-body">
@@ -40,20 +40,23 @@ class Portfolio extends Component {
                                     </div>
                                     <div className="cardBack">
                                         <div className="cardDetails">
-                                            <div><div className="desciptTitle">Overview: </div>{projects.overview1}</div>
-
-                                            <div><div className="desciptTitle">Technologies:</div>{projects.tech1}</div>
-                                            <div>
-                                                <a href={projects.deployLink2}>
-                                                    <div className="desciptTitle">Deployed: </div>{projects.deployLink1}
+                                            <p><div className="descriptTitle">Overview: </div>{projects.overview1}</p>
+                                            
+                                            <p><div className="descriptTitle">Technologies:</div>{projects.tech1}</p>
+                                            
+                                            <p className="cardBackLink">
+                                                <div className="descriptTitle"> Deployed: </div>
+                                                <a href={projects.deployLink1}>
+                                                    {projects.deployLink1}
                                                 </a>
-                                            </div>
+                                            </p>
 
-                                            <div>
-                                                <a href={projects.githubLink2}>
-                                                    <div className="desciptTitle">GitHub: </div>{projects.githubLink1}
+                                            <p className="cardBackLink">
+                                                <div className="descriptTitle"> GitHub: </div>
+                                                <a  href={projects.githubLink1}>
+                                                    {projects.githubLink1}
                                                 </a>
-                                            </div>
+                                            </p>
 
                                         </div>
 
@@ -81,20 +84,23 @@ class Portfolio extends Component {
                                     </div>
                                     <div className="cardBack">
                                         <div className="cardDetails">
-                                            <div><div className="desciptTitle">Overview: </div>{projects.overview2}</div>
-
-                                            <div><div className="desciptTitle">Technologies:</div>{projects.tech2}</div>
-                                            <div>
+                                            <p><div className="descriptTitle">Overview: </div>{projects.overview2}</p>
+                                            
+                                            <p><div className="descriptTitle">Technologies:</div>{projects.tech2}</p>
+                                            
+                                            <p className="cardBackLink">
+                                                <div className="descriptTitle">Deployed: </div>
                                                 <a href={projects.deployLink2}>
-                                                    <div className="desciptTitle">Deployed: </div>{projects.deployLink2}
+                                                    {projects.deployLink2}
                                                 </a>
-                                            </div>
+                                            </p>
 
-                                            <div>
+                                            <p className="cardBackLink">
+                                                <div className="descriptTitle">GitHub: </div>
                                                 <a href={projects.githubLink2}>
-                                                    <div className="desciptTitle">GitHub: </div>{projects.githubLink2}
+                                                    {projects.githubLink2}
                                                 </a>
-                                            </div>
+                                            </p>
 
                                         </div>
 
