@@ -5,7 +5,9 @@ import Project from "./projectList.json";
 import "./style.css";
 
 class Portfolio extends Component {
-
+    state = {
+        isClicked: false
+    }
     componentDidMount() {
         window.scrollTo(0, 0);
     }
@@ -38,10 +40,21 @@ class Portfolio extends Component {
                                     </div>
                                     <div className="cardBack">
                                         <div className="cardDetails">
-                                            <h6>DANI is a Full Stack MERN application that provides children with autism a source of entertainment and learning. The app is divided into three units, Look, Listen, and Learn. Each of these units contains three modules for engagement and learning.</h6>
+                                            <div><div className="desciptTitle">Overview: </div>{projects.overview1}</div>
+
+                                            <div><div className="desciptTitle">Technologies:</div>{projects.tech1}</div>
                                             <div>
-                                            Technologies: JavaScript, React, React Canvas Draw, React Player, Node/Express Server, MongoDB/Mongoose, MVC, Heroku, Robo 3T, Reddit API, Photo Sphere Viewer
+                                                <a href={projects.deployLink2}>
+                                                    <div className="desciptTitle">Deployed: </div>{projects.deployLink1}
+                                                </a>
                                             </div>
+
+                                            <div>
+                                                <a href={projects.githubLink2}>
+                                                    <div className="desciptTitle">GitHub: </div>{projects.githubLink1}
+                                                </a>
+                                            </div>
+
                                         </div>
 
                                     </div>
@@ -55,12 +68,12 @@ class Portfolio extends Component {
                             <div className="col-md-6 cardRow">
                                 <div className="cardPort">
                                     <div className="card cardFront">
-                                        <a href={projects.deployLink2} >
+                                        <a >
                                             <img src={process.env.PUBLIC_URL + projects.imageLocation2} className="card-img-top" alt="..." />
                                         </a>
                                         <div className="card-body">
                                             <div className="card-text">{projects.project2}
-                                                <a href={projects.githubLink1}>
+                                                <a href={projects.githubLink2}>
                                                     <i className="fab fa-github githubFA"></i>
                                                 </a>
                                             </div>
@@ -68,10 +81,21 @@ class Portfolio extends Component {
                                     </div>
                                     <div className="cardBack">
                                         <div className="cardDetails">
-                                            <h8>Saron Nhong <span>Web Developer</span></h8>
-                                            <div className="social-icons">
-                                                <a ><i class="fab fa-facebook-f"></i></a>
+                                            <div><div className="desciptTitle">Overview: </div>{projects.overview2}</div>
+
+                                            <div><div className="desciptTitle">Technologies:</div>{projects.tech2}</div>
+                                            <div>
+                                                <a href={projects.deployLink2}>
+                                                    <div className="desciptTitle">Deployed: </div>{projects.deployLink2}
+                                                </a>
                                             </div>
+
+                                            <div>
+                                                <a href={projects.githubLink2}>
+                                                    <div className="desciptTitle">GitHub: </div>{projects.githubLink2}
+                                                </a>
+                                            </div>
+
                                         </div>
 
                                     </div>

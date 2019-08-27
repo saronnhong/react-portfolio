@@ -65,7 +65,8 @@ body{
     height: auto;
     transform-style: preserve-3d;
     perspective: 600px;
-    transition: 0.5s;
+    transition: .5s;
+    
 }
 .cardFront{
     position: relative;
@@ -73,17 +74,20 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #000;
-    backface-visibility: hidden;
-    transform: rotateX(0deg);
-    transition: 0.5s;
+    /* background: #000; */
+    /* backface-visibility: hidden; */
+    transform: rotateY(0deg);
+    transition: .5s;
 }
 .cardPort:hover .cardFront{
-    transform: rotateX(-180deg);
+    transform: rotateY(-180deg);
+    
 }
 
 .cardPort:hover .cardBack{
-    transform: rotateX(0deg);
+    transform: rotateY(0deg);
+
+
 }
 .cardBack{
     position: absolute;
@@ -91,15 +95,21 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #000;
+    background: rgb(40,40,40);
     backface-visibility: hidden;
-    transform: rotateX(180deg);
-    transition: 0.5s;
-    opacity: .9;
+    transform: rotateY(180deg);
+    transition: .5s;
+    opacity: .95;
+    
 }
 .cardDetails {
     color: white;
     margin: 20px;
+    font-size: 12px;
+}
+.desciptTitle{
+    /* font-weight: bold; */
+    color: red;
 }
 
 @media only screen and (max-width: 700px) {
@@ -108,8 +118,10 @@ body{
     }
     .cardPort {
         margin: 1.2em;
+        left: 45%;
+        top: 40%;
     }
     .cardRow {
-        padding: 0 5px;
+        padding: 0;
     }
 }

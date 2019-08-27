@@ -5,10 +5,15 @@
     "deployLink1": "https://dani-ap.herokuapp.com",
     "imageLocation1": "/img/dani_ss.png",
     "githubLink1": "https://github.com/saronnhong/dani",
+    "overview1":"DANI is a Full Stack MERN application that provides children with autism a source of entertainment and learning. The app is divided into three units, Look, Listen, and Learn. Each of these units contains three modules for engagement and learning.",
+    "tech1": "JS, React, React Canvas Draw, React Player, Node/Express Server, MongoDB/Mongoose, Robo 3T, Reddit API, Photo Sphere Viewer",
     "project2": "Clicky Game: A Lesson in ReactJS",
     "deployLink2": "https://saronnhong.github.io/clicky-game/",
     "imageLocation2": "/img/clicky_game.png",
-    "githubLink2": "https://github.com/saronnhong/clicky-game"
+    "githubLink2": "https://github.com/saronnhong/clicky-game",
+    "overview2":"Clicky Game is a memory game with React. The user must click on as many different images as possible without selecting the same images twice. Do your best to beat the high score.",
+    "tech2": "JS, NodeJS, Bootstrap, Github Pages, React"
+    
   },
   {
     "id": 2,
@@ -16,10 +21,14 @@
     "deployLink1": "https://mongo-scrapper-719.herokuapp.com",
     "imageLocation1": "/img/monogoscraper.png",
     "githubLink1": "https://github.com/saronnhong/mongo-scraper",
+    "overview1":"Mongo Scraper is a web scraper app that allows the user to scrape news articles from Cambodia Daily. Each article can be saved to a Saved list and be able to remove from this list. Web app was made using Mongoose and Cheerio.",
+    "tech1": "JS, jQuery, NodeJS, Handlebars, Mongo, Mongoose, Robo 3T, Axios, Cheerios",
     "project2": "Project 2: Wat2Watch",
     "deployLink2": "https://wat2watch-p2.herokuapp.com/",
     "imageLocation2": "/img/wat2watch.png",
-    "githubLink2": "https://github.com/saronnhong/movie_gen"
+    "githubLink2": "https://github.com/saronnhong/movie_gen",
+    "overview2":"Wat2Watch is a full stack application that collects information through surveys and favorited movies, stores and analyzes it in a MySQL database, and gives the user recommendations for movies that they would like.",
+    "tech2": "JS, NodeJS, MySQL, The Movie Database API, Handlebars, Morgan, Passport, Sequelize, Unirest"
   },
   {
     "id": 3,
@@ -27,32 +36,44 @@
     "deployLink1": "https://eat-da-burger-sn.herokuapp.com/",
     "imageLocation1": "/img/eatdaburger_ss.png",
     "githubLink1": "https://github.com/saronnhong/burger",
+    "overview1":"Eat-Da-Burger is a restaurant app that allows the user to input the name of burgers that they would like to eat. Each burger in the waiting area has a Devour button. When the user clicks it, the burger will move to the right side of the page. All burgers are stored in MySQL database.",
+    "tech1": "JS, jQuery, NodeJS, Handlebars, MySQL, MVC",
     "project2": "Friend Finder: A Lesson in Express",
     "deployLink2": "https://friend-finder-86.herokuapp.com/",
     "imageLocation2": "/img/friendfinder.png",
-    "githubLink2": "https://github.com/saronnhong/friend-finder"
+    "githubLink2": "https://github.com/saronnhong/friend-finder",
+    "overview2":"Friend Finder is a dating app. This full stack site takes the results from the users' surveys and then compare their answers with those of other users. The app will then display the name and picture of the user that best matches.",
+    "tech2": "JS, jQuery, NodeJS, Heroku, Express"
   },
   {
     "id": 4,
     "project1": "BAmazon: A Lesson in MySQL",
-    "deployLink1": "# ",
+    "deployLink1": " ",
     "imageLocation1": "/img/bamazonManager_ss.png",
     "githubLink1": "https://github.com/saronnhong/bamazon",
+    "overview1":"BAmazon is an Amazon-like storefront. The Customer app takes orders from the customers and depletes the stock from inventory. The Manger app is able to view the products that are available for sale, check items that are low in inventory, add to the inventory, and add new products to the store front. The Supervisor app is able to keep track of the sales and profit for each department and be able to add new departments.",
+    "tech1": "JavaScript, NodeJS, Inquirer, MySQL",
     "project2": "Constructor Word Guess: A Lesson In Constructors",
-    "deployLink2": "# ",
+    "deployLink2": " ",
     "imageLocation2": "/img/word-guess-00.png",
-    "githubLink2": "https://github.com/saronnhong/Constructor-Word-Guess"
+    "githubLink2": "https://github.com/saronnhong/Constructor-Word-Guess",
+    "overview2":"The Constructor Word Guess runs in the Terminal window. User must install the Inquirer NPM package before being able to run the application. User must type 'node index.js' to start the game. The game will start and user will be prompted to enter a letter guess to try and figure out what the word is. There is a score counter to keep track of how many Word puzzles that the user is able to solve before running out of guesses.",
+    "tech2": "JavaScript, NodeJS, Inquirer"
   },
   {
     "id": 5,
     "project1": "LIRI Node App: A Lesson in Node JS",
-    "deployLink1": "# ",
+    "deployLink1": " ",
     "imageLocation1": "/img/Spotify-This-Song.png",
     "githubLink1": "https://github.com/saronnhong/liri-node-app",
+    "overview1":"LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node application that takes in parameters, communicate with othe APIs, and gives you back data. LIRI will communicate with APIs from Spotify, Bandsintown, and OMDB.",
+    "tech1": "JavaScript, NodeJS, Node-Spotify API, OMDB API, Bandsintown API, Axios, MomentJS",
     "project2": "ChowFeed: Group Project #1 ",
     "deployLink2": "https://saronnhong.github.io/ChowFeed/",
     "imageLocation2": "/img/chowfeed.png",
-    "githubLink2": "https://github.com/saronnhong/ChowFeed"
+    "githubLink2": "https://github.com/saronnhong/ChowFeed",
+    "overview2":"ChowFeed is a Front End application that provides the user two ways to cultivate their food cravings in one site. It finds a wide collection of the most popular recipes with the Food2Fork API and searches the most popular nearby restaurants with the Yelp Fusion API. ",
+    "tech2": "JavaScript, jQuery, Bootstrap, Food2Fork API, Yelp Fusion API, AJAX"
   }
 ] 
 
