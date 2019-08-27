@@ -100,12 +100,14 @@ body{
     transform: rotateY(180deg);
     transition: .5s;
     opacity: .95;
+    overflow-y: auto;
     
 }
 .cardDetails {
     color: white;
     margin: 20px;
     font-size: 12px;
+    
 }
 .desciptTitle{
     font-weight: bold;
@@ -123,5 +125,8 @@ body{
     }
     .cardRow {
         padding: 0;
+    }
+    .cardDetails {
+        margin: 10px;
     }
 }
