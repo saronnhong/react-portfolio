@@ -35,6 +35,7 @@ class About extends Component {
     render() {
 
         return (
+            
             <div className="aboutMain container animated fadeInDown" >
                 <div className="row">
                     <div className="col-md-6">

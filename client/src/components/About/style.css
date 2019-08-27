@@ -46,6 +46,7 @@
     float: right;
   }
 
+
   @media(max-width:765px){
     .aboutMain {
       width: 98%;
