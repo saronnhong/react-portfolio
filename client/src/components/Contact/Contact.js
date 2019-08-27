@@ -43,7 +43,7 @@ class Contact extends Component {
         return (
             <div className="contactForm" >
                 <div className="containerForm">
-                    <div className="wrapper animated bounceInLeft slower">
+                    <div className="wrapper animated fadeInLeft">
                         <div className="company-info">
                             <h3>Contact</h3>
                             <ul className="ulForm">
