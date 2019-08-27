@@ -22,8 +22,11 @@
   }
 
   .aboutMeTitle{
-    /* font-size: 30px; */
-    margin-left: .5em;
+    font-size: 48px;
+    font-weight: bolder;
+    border-bottom-style: dashed;
+    
+    margin-left: .3em;
     color: rgb(70,70,70);
 
   }
@@ -42,8 +45,13 @@
     
   }
   .imgHolder{
-    width: 70%;
-    float: right;
+    width: 60%;
+    float: center;
+    padding:1px;
+    margin-top: 3em;
+
+    border:10px double #021a40;
+    background-color:#ff0;
   }
 
 
