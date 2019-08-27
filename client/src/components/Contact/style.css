@@ -8,7 +8,7 @@
     margin-right:auto;
     padding:1em;
     /* margin-bottom: 15em; */
-    opacity: .93;
+    opacity: .97;
     width: 75%;
     margin-top: 8em;
 
@@ -46,6 +46,7 @@
   .company-info h3, .company-info ul{
     text-align: left;
     margin:0 0 1rem 0;
+    color: rgb(50,50,50);
   }
   
   .contact{

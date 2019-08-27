@@ -23,7 +23,7 @@
 .portContainer{
     
     background-color: rgb(250, 250, 250);
-    opacity: 0.95;
+    opacity: 0.97;
     width: 85%;
     border-style: solid;
     border-radius: 10px;
@@ -37,10 +37,10 @@
 }
 body{
     
-    background-image: url("/img/full-bloom.png");
+    /* background-image: url("/img/full-bloom.png");
     background-repeat: repeat;
     background-color: rgb(242,192,148);
-    background-blend-mode: multiply;
+    background-blend-mode: multiply; */
   
 }
 
