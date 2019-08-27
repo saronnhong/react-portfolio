@@ -27,7 +27,7 @@ class Portfolio extends Component {
                             <div className="col-md-6 cardRow">
                                 <div className="cardPort">
                                     <div className="card cardFront">
-                                        <a href={projects.deployLink1} >
+                                        <a>
                                             <img src={process.env.PUBLIC_URL + projects.imageLocation1} className="card-img-top" alt="..." />
                                         </a>
                                         <div className="card-body">
