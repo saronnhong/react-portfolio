@@ -131,12 +131,13 @@ a:hover {
     font-size: 42px;
     margin-top: 90px;
     line-height: 1.25;
-    /* color: rgb(50,50,50); */
+    color: rgb(50,50,50);
+    opacity: .9;
   }
 
   .introText {
     font-size: 18px;
-    /* color: rgb(50,50,50); */
+    color: rgb(50,50,50);
     
   }
 

@@ -10,7 +10,7 @@ class App extends Component {
   render() {
     return (
       <div className="main">
-        <a id="home"></a>
+        
         <div className="homeScreen">
           <div className="container">
             <div className="row">
