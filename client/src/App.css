@@ -143,9 +143,9 @@ a:hover {
     
   }
 
-  /* .emptyRow {
-    height: 250px;
-  } */
+  .emptyRow {
+    height: 0px;
+  }
 
   .homeScreen {
     /* background-image: url("/img/full-bloom.png"); */
