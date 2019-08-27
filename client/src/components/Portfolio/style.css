@@ -101,12 +101,14 @@ body{
     color: white;
     margin: 20px;
     font-size: 14px;
+    text-align: left;
     
 }
 .descriptTitle{
     font-weight: bold;
     color: red;
     padding-right: .5em;
+    text-align: left;
 }
 
 .cardBackLink{

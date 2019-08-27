@@ -37,7 +37,7 @@ class About extends Component {
         return (
             
             <div className="aboutMain container animated fadeInDown" >
-                <div className="row">
+                <div className="row mainRow">
                     <div className="col-md-6">
                         <div className="row">
                             <h3 className="aboutMeTitle">
