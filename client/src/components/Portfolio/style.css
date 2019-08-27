@@ -65,8 +65,8 @@ body{
     transform-style: preserve-3d;
     perspective: 600px;
     transition: .5s;
-    -webkit-transform: -webkit-translate(-50%, -50%);
-    -webkit-transform-style: preserve-3d;
+    /* -webkit-transform: -webkit-translate(-50%, -50%); */
+    /* -webkit-transform-style: preserve-3d; */
 }
 .cardFront{
     position: relative;
