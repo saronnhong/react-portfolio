@@ -59,14 +59,14 @@ body{
     position: relative;
     top: 50%;
     left: 50%;
-    
     transform: translate(-50%, -50%);
     width: auto;
     height: auto;
     transform-style: preserve-3d;
     perspective: 600px;
     transition: .5s;
-    
+    -webkit-transform: translate(-50%, -50%);
+    -webkit-transform-style: preserve-3d;
 }
 .cardFront{
     position: relative;
@@ -78,14 +78,18 @@ body{
     /* backface-visibility: hidden; */
     transform: rotateY(0deg);
     transition: .5s;
+    -webkit-transform: rotateY(0deg);
+    -webkit-transition: .5s;
 }
 .cardPort:hover .cardFront{
     transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
     
 }
 
 .cardPort:hover .cardBack{
     transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
 
 
 }
@@ -101,6 +105,8 @@ body{
     transition: .5s;
     opacity: .95;
     overflow-y: auto;
+    -webkit-transition: .5s;
+    -webkit-transform: rotateY(180deg);
     
 }
 .cardDetails {
