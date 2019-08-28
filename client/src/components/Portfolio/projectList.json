@@ -17,7 +17,7 @@
   },
   {
     "id": 2,
-    "project1": "Mongo Scrapper: A Lesson in Mongoose & Cheerio",
+    "project1": "Mongo Scraper: A Lesson in Mongoose & Cheerio",
     "deployLink1": "https://mongo-scrapper-719.herokuapp.com",
     "imageLocation1": "/img/monogoscraper.png",
     "githubLink1": "https://github.com/saronnhong/mongo-scraper",
