@@ -32,9 +32,9 @@ class Portfolio extends Component {
                                         </a>
                                         <div className="card-body">
                                             <div className="card-text">{projects.project1}
-                                                <a href={projects.githubLink1}>
+                                                {/* <a href={projects.githubLink1}>
                                                     <i className="fab fa-github githubFA"></i>
-                                                </a>
+                                                </a> */}
                                             </div>
                                         </div>
                                     </div>
@@ -76,9 +76,9 @@ class Portfolio extends Component {
                                         </a>
                                         <div className="card-body">
                                             <div className="card-text">{projects.project2}
-                                                <a href={projects.githubLink2}>
+                                                {/* <a href={projects.githubLink2}>
                                                     <i className="fab fa-github githubFA"></i>
-                                                </a>
+                                                </a> */}
                                             </div>
                                         </div>
                                     </div>
