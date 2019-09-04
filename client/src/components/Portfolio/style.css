@@ -4,10 +4,6 @@
     
 }
 
-/* .cardPort {
-    margin: 20px 10px 5px 10px;
-    
-} */
 .githubFA {
     float: right;
 }
@@ -35,16 +31,6 @@
     
     
 }
-body{
-    
-    /* background-image: url("/img/full-bloom.png");
-    background-repeat: repeat;
-    background-color: rgb(242,192,148);
-    background-blend-mode: multiply; */
-  
-}
-
-
 
 .cardPort{
     /* position: absolute;
@@ -58,7 +44,7 @@ body{
     height: auto;
     transform-style: preserve-3d;
     perspective: 600px;
-    transition: .5s;
+    transition: 0.5s;
 
 }
 .cardFront{
@@ -70,17 +56,17 @@ body{
     /* background: #000; */
     /* backface-visibility: hidden; */
     transform: rotateY(0deg);
-    transition: .5s;
-   
+    transition: 0.5s;
+    transition-delay: 0.4s;
 }
 .cardPort:hover .cardFront{
     transform: rotateY(-180deg);
-    
+    transition-delay: 0.2s;
 }
 
 .cardPort:hover .cardBack{
     transform: rotateY(0deg);
-
+    transition-delay: 0.2s;
 
 }
 .cardBack{
@@ -92,10 +78,10 @@ body{
     background: rgb(40,40,40);
     backface-visibility: hidden;
     transform: rotateY(180deg);
-    transition: .5s;
+    transition: 0.5s;
     opacity: .95;
     overflow-y: auto;
-    
+    transition-delay: 0.4s;
 }
 .cardDetails {
     color: white;
@@ -113,7 +99,6 @@ body{
 
 .cardBackLink{
     display: flex;
-    
 }
 
 
