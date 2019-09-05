@@ -27,7 +27,7 @@ class App extends Component {
             <div className="row">
               <div className="col-md-12">
                 <div className="introText animated fadeInUp slow">
-                  HTML | CSS | JavaScript | NodeJS | Express | MySQL | MongoDB | ReactJS
+                JavaScript | ReactJS | NodeJS | Express | MySQL | MongoDB 
                 </div>
               </div>
             </div>
