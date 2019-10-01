@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import "./style.css";
 
 // Allow less secure apps: ON in gmail settings to be able to send email
@@ -75,16 +74,11 @@ class Contact extends Component {
                                 <button className="btn btn-primary" type="button" onClick={() => {
                                     this.sendEmail();
                                 }}> Submit</button>
-
                             </form>
-
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
         );
     }
 }

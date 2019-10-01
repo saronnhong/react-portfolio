@@ -30,11 +30,6 @@ function Navbar(props) {
                                 <div className="navMenu" id="navContact" data-toggle="collapse" data-target=".navbar-collapse.show">Contact</div>
                             </Link>
                         </li>
-                        {/* <li class="nav-item">
-                            <a href= {process.env.PUBLIC_URL + '/Resume.pdf'} >
-                                <div className="navMenu" id="navContact" data-toggle="collapse" data-target=".navbar-collapse.show">Resume</div>
-                            </a>
-                        </li> */}
                     </ul>
                 </div>
             </nav>
