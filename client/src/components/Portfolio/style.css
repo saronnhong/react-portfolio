@@ -28,8 +28,7 @@
     margin-top: 80px;
     /* margin-bottom: 40px; */
     box-shadow: 0 0 20px 0 rgba(72,94,116,.7);
-    
-    
+
 }
 
 .cardPort{
@@ -42,9 +41,9 @@
     transform: translate(-50%, -50%);
     width: auto;
     height: auto;
-    transform-style: preserve-3d;
+    /* transform-style: preserve-3d;
     perspective: 600px;
-    transition: 0.5s;
+    transition: 0.5s; */
 
 }
 .cardFront{
@@ -55,9 +54,11 @@
     height: 100%;
     /* background: #000; */
     /* backface-visibility: hidden; */
+    
     transform: rotateY(0deg);
     transition: 0.5s;
     transition-delay: 0.4s;
+    
 }
 .cardPort:hover .cardFront{
     transform: rotateY(-180deg);

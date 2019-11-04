@@ -24,7 +24,7 @@ class Portfolio extends Component {
 
                     {Project.map((projects) =>
                         <div className="row">
-                            <div className="col-md-6 cardRow">
+                            <div className="col-md-6 cardRow ">
                                 <div className="cardPort">
                                     <div className="card cardFront">
                                         <a >
