@@ -6,7 +6,7 @@
     "imageLocation1": "/img/dani_ss-min.png",
     "githubLink1": "https://github.com/saronnhong/dani",
     "overview1":"Full Stack MERN application that provides children with autism a source of entertainment and learning. Inspired by team mate’s autistic brother who is soothed by various tasked on a phone.Designed front end layout and created reusable Menu and Sound components that allowed for easy construction of Animal, Relaxation, and Nature Sounds sections. Created a simplified Spelling game that gradually grows more difficult as the user progress.",
-    "tech1": "JS, React, React Canvas Draw, React Player, Node/Express Server, MongoDB/Mongoose, Robo 3T, Reddit API, Photo Sphere Viewer",
+    "tech1": "JS, React, React Canvas Draw, React Player, Node/Express Server, MongoDB/Mongoose, Robo 3T, Reddit API, Photo Sphere Viewer. (Test Account => Email: test@test.com, Password: test123)",
     "project2": "Wat2Watch",
     "deployLink2": "https://wat2watch-p2.herokuapp.com/",
     "imageLocation2": "/img/wat2watch-min.png",
